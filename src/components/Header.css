@@ -1,0 +1,114 @@
+.header {
+    height: 70px; /* Increased height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff; /* Changed background color to white */
+    padding: 0 20px; /* Adjusted padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+  }
+  
+  .header span {
+    color: #007bff; /* Changed color to a modern blue */
+  }
+  
+  .header-logo {
+    font-family: "Arial", sans-serif; /* Modernized font */
+    font-size: 1.8rem; /* Slightly reduced size */
+    font-weight: 600; /* Slightly reduced weight */
+    color: #333; /* Darker logo color */
+  }
+  
+  .header__options {
+    display: flex;
+    align-items: center; /* Vertically align options */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333; /* Default link color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  a:hover {
+    color: #007bff; /* Highlight color on hover */
+  }
+  
+  .header__option {
+    font-weight: 500;
+    margin-left: 30px; /* Reduced margin */
+    color: #666; /* Slightly lighter text color */
+    cursor: pointer;
+    padding: 8px 12px; /* Added padding for better touch targets */
+    border-radius: 4px; /* Added rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  }
+  
+  .header__option:hover {
+    background-color: #f0f0f0; /* Subtle background on hover */
+    color: #007bff; /* Highlight color on hover */
+  }
+  
+  #header__bar {
+    position: fixed; /* Fixed position */
+    left: 0; /* Full width */
+    bottom: 0;
+    height: 60px; /* Reduced height */
+    width: 100%;
+    color: white;
+    background-color: #007bff; /* Modern blue */
+    transition: 0.5s ease all;
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Space icons evenly */
+  }
+  
+  .header__bar__title {
+    display: none; /* Removed title */
+  }
+  
+  .header__bar__icons {
+    color: white;
+    display: flex; /* Ensure icons are in a row */
+  }
+  
+  #header__bar img {
+    height: 25px; /* Slightly reduced size */
+    width: 25px;
+    margin: 0 15px; /* Adjusted margin */
+    filter: invert(100%); /* Invert icons for better visibility on dark background */
+    transition: transform 0.2s ease; /* Add transform transition */
+  }
+  
+  #header__bar img:hover {
+    transform: scale(1.1); /* Scale up slightly on hover */
+  }
+  
+  
+  @media only screen and (max-width: 768px) { /* Changed breakpoint to 768px */
+    .header-logo {
+      font-size: 1.5rem;
+    }
+  
+    .header {
+      padding: 0 10px;
+      height: 60px;
+    }
+  
+    .header__option {
+      font-size: 0.85rem;
+      margin-left: 20px;
+      padding: 6px 10px;
+    }
+  
+    #header__bar {
+      height: 50px;
+    }
+  
+    #header__bar img {
+      height: 20px;
+      width: 20px;
+      margin: 0 10px;
+    }
+  }

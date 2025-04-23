@@ -1,0 +1,142 @@
+.visuals {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #f9f9f9; /* Subtle background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .visualizer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .legend {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 4px 8px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+  }
+  
+  .legend__lable {
+    height: 8px;
+    width: 25px;
+    background-color: black;
+    margin-right: 5px;
+    border-radius: 10px;
+  }
+  
+  .visual__items {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 340px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid black;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+  }
+  
+  .visual__item {
+    position: absolute;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .visual__item:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 149, 199, 0.1);
+  }
+  
+  .visual__item > h4 {
+    font-size: 0.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .visual__btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .visual__btns > button {
+    width: 160px;
+    background-color: #007bff;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+  }
+  
+  .visual__btns > button:hover {
+    background-color: #0069d9;
+    transform: translateY(-2px);
+  }
+  
+  .visual__btns > button:active {
+    transform: translateY(1px);
+  }
+  
+  
+  
+  
+  /* Responsive Adjustments */
+  @media only screen and (max-width: 900px) {
+    .visuals {
+      padding: 10px;
+    }
+  
+    .visualizer {
+      padding: 5px;
+    }
+  
+    .legend {
+      font-size: 0.75rem;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .visual__btns {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+  
+    .visuals {
+      padding-top: 10px;
+    }
+  
+    .visual__btns > button {
+      width: 140px;
+      padding: 8px;
+      font-size: 0.8rem;
+      margin: 5px;
+    }
+  }
+  
